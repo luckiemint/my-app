@@ -12,25 +12,31 @@ const Home = () => {
     const goTodo = () => { navigate("/todo"); };
 
     return (
-        <>
+        <div className='page'>
             <Header />
-            <Student
-            // name='Showy'
-            // age={25}
-            />
-            {/* <Student
+            <div className='mainContainer'>
+                <Student
+                // name='Showy'
+                // age={25}
+                />
+                {/* <Student
                 name='Rosy'
                 age={25}
-            /> */}
-            <div className='mainContainer'>
-                <button onClick={goTodo}>TodoList</button>
-                <button onClick={goImages}>Images</button>
+                /> */}
+                <div className='btnContainer'>
+                    <button onClick={goTodo}>TodoList</button>
+                    <button onClick={goImages}>Images</button>
+                </div>
+
+
 
             </div>
 
 
+
+
             <Outlet />
-        </>
+        </div>
     )
 }
 
